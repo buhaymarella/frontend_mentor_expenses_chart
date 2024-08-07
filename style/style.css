@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+:root{
+    /* ### Primary */
+
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    
+    /* ### Neutral */
+    
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+body{
+    background-color: var(--Cream);
+    padding: 0 1rem;
+}
+main{
+    padding: 2rem 0;
+    position: relative;
+    margin: auto;
+    max-width: 18rem;
+    top: 5rem;
+}
+.day-div {
+    padding: .9rem;
+    margin-bottom: 10px;
+    background-color: var(--Soft-red);
+    border-radius: 4px;
+}
+.day-div:hover{
+    transition: .4s;
+    opacity: 50%;
+}
+.header-container{
+    background-color: var(--Soft-red);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 15px;
+    color: var(--Cream);
+    border-radius: 8px;
+}
+.header-container .headerTxt p,
+.footer-container .footerTxt{
+    font-size: 10px;
+    padding: 0%;
+    margin: 0%;
+}
+.footer-container .footerTxt{
+    color: var(--Medium-brown);
+}
+.headerTxt h3{
+    margin: 0%;
+    padding: 0;
+    color: var(--Cream);
+}
+.header-container img{
+    width: 2.5rem;
+
+}
+.main-container{
+    background-color: var(--Very-pale-orange);
+    padding: 1rem;
+    border-radius: 8px;
+}
+h6{
+    color: var(--Medium-brown);
+    font-weight: 400;
+    margin-top: .2rem;
+    padding-top: 0%;
+}
+h3, h1, .text p:nth-child(2){
+    color: var(--Dark-brown);
+}
+.text p:nth-child(2){
+    font-weight: 700;
+}
+.text {
+    text-align: end;
+}
+.text p, .footerTxt p{
+    font-size: 8px;
+}
+.amount{
+    font-size: 8px;
+    background-color: var(--Dark-brown);
+    color: var(--Cream);
+    padding: .2rem;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    display: none;
+}
+.chart-container{
+    display: flex;
+    justify-content: center;
+    transform-origin: top;
+    align-items: end;
+    gap: 8px;
+    text-align: center;
+    margin-bottom: 1.1rem;
+    margin-top: 1rem;
+    padding: 0 .2rem ;
+}
+.chart-container div{
+    margin-bottom: 0%;
+}
+hr{
+    border: none;
+    background-color: var(--Cream);
+    height: .1px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.attribution { 
+    position: relative;
+    top: 5rem;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
